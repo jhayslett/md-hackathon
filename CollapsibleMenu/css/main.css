@@ -79,6 +79,8 @@ ul {
 	color: #212121;
 	font-weight: 700;
 	font-size: 1.1em;
+	width: 90%;
+	padding: 10px 15px;
 }
 
 .collapse-header:hover {
@@ -90,7 +92,7 @@ ul {
 	padding-bottom: 0px;
 	margin-top: 0px;
 	padding-top: 0px;
-	height: 0;
+	height: 0px;
 	overflow: hidden;
 	display: block;
 	color: #494949;
@@ -98,11 +100,7 @@ ul {
 	font-size: .9em;
 }
 
-p {
+.collapse-body p {
 	margin: 0;
-	padding-right: 15px;
-}
-
-.show {
-	height: 50px;
+	padding: 20px;
 }
