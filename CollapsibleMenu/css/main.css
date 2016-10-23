@@ -1,0 +1,108 @@
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+body {
+	background-color: #fff;
+	font-family: 'Roboto', sans-serif;
+	margin: 0px;
+}
+
+header {
+	background-color: #2980b9;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	color: #fff;
+	font-size: 1.2em;
+	font-weight: 700;
+	padding: 10px 0px 12px 18px;
+	width: 100%;
+}
+
+header h1, header h2 {
+	margin: 0;
+}
+
+header h2 {
+	font-size: 1em;
+	font-weight: 400;
+}
+
+main {
+	margin: 10px 0px 0px 10px;
+}
+
+ul {
+	list-style-type: none;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	border: 1px solid #ddd;
+	width: 700px;
+	margin: 20px 0px 0px 18px;
+	padding-left: 0px;
+}
+
+.collapsible i {
+	vertical-align: middle;
+	padding-left: 10px;
+}
+
+.collapsible i, .collapse-header {
+	display: inline-block;
+}
+
+.collapse-header, .collapse-body {
+	padding: 10px;
+}
+
+.collapse-header {
+	vertical-align: middle;
+	color: #212121;
+	font-weight: 700;
+	font-size: 1.1em;
+}
+
+.collapse-header:hover {
+	cursor: pointer;
+}
+
+.collapse-body {
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	margin-top: 0px;
+	padding-top: 0px;
+	height: 0;
+	overflow: hidden;
+	display: block;
+	color: #494949;
+	transition: height .3s ease-in-out;
+	font-size: .9em;
+}
+
+p {
+	margin: 0;
+	padding-right: 15px;
+}
+
+.show {
+	height: 50px;
+}
