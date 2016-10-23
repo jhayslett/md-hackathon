@@ -1,18 +1,24 @@
 function clickEvent(e) {
-  var content = e.target.nextElementSibling;
-  if(content.classList.contains("show")) {
-  	content.classList.remove("show");
+  var contentWrapper = e.target.nextElementSibling;
+  var content = contentWrapper.firstChild;
+  
+  if(contentWrapper.classList.contains("show")) {
+  	contentWrapper.classList.remove("show");
+    contentWrapper.style.height = "0px";
   } else {
 
   	var allBodies = document.getElementsByClassName("collapse-body");
-  	for(var i = 0; i < allBodies.length; i++) {
+  	
+    for(var i = 0; i < allBodies.length; i++) {
   		if(allBodies[i].classList.contains("show")) {
   			allBodies[i].classList.remove("show");
+        allBodies[i].style.height = "0px";
   		}
-  		content.classList.add("show");
-   	}
+  		contentWrapper.classList.add("show");
+      contentWrapper.style.height = content.offsetHeight + "px";
+    }
   }
- }
+}
 
 
 document.addEventListener("DOMContentLoaded", function() {
